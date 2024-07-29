@@ -26,7 +26,7 @@ function tidy_entire_page(string $buffer): string {
 		'tidy-mark'                   => false,          // Don't advertise yourself in the <meta>, please
 		'wrap'                        => 200,            // Wrap at this many chars
 		'new-inline-tags'             => 'data',         // Ensure that empty <data> tags aren't stripped (DanQ.me uses these for e.g. lat/lng on checkins)
-	], 'utf8' );                                       // Ensure we treat the incoming document as UTF-8, 'cos it probably is
+	], 'utf8' );                                             // Ensure we treat the incoming document as UTF-8, 'cos it probably is
 
 	// Repair broken HTML and tidy according to the rules above:
 	$tidy->cleanRepair();
@@ -37,6 +37,8 @@ ob_start( 'tidy_entire_page' );
 
 /*
  * Everything below here is boilerplate TwentyTwentyOne!
+ *
+ * --------====--------====--------====--------====--------====--------====++++++++++====--------====--------====--------====--------====--------====--------
  */
 
 
