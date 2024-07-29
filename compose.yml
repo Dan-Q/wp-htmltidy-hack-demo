@@ -1,0 +1,30 @@
+services:
+
+  wordpress:
+    build: .
+    restart: always
+    ports:
+      - 8890:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: demouser
+      WORDPRESS_DB_PASSWORD: demopass
+      WORDPRESS_DB_NAME: demodb
+    depends_on:
+        - db
+    volumes:
+      - ./src:/var/www/html/wp-content/themes/htmltidy21
+
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: demodb
+      MYSQL_USER: demouser
+      MYSQL_PASSWORD: demopass
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - db:/var/lib/mysql
+
+volumes:
+  db:
