@@ -24,6 +24,14 @@ To see this working:
 6. Activate the **HTMLTidy21** theme (http://localhost:8890/wp-admin/themes.php), which is a child theme of **TwentyTwentyOne**.
 7. Refresh http://localhost:8890/ and View Source again: note that the code has been tidied for consistency, readability, and standards! 🎉
 
+#### Before
+
+![HTML source, untidy](https://github.com/user-attachments/assets/fcb66529-7bca-4ddc-b34f-0564068175ea)
+
+#### After
+
+![HTML source, tidied](https://github.com/user-attachments/assets/dd34d8ba-655b-42bf-b470-62117c12b7e8)
+
 #### How does this work?
 
 **HTMLTidy21** is a child theme of **TwentyTwentyOne**. `src/header.php`, in this repo, overrides TwentyTwentyOne's `header.php` only.
