@@ -5,7 +5,7 @@ configure [HTMLTidy](https://www.html-tidy.org/) to run across all of your outpu
 
 - Cleaner, tidier, more human-readable HTML code
 - Code repaired and formatted to the standard you prefer (e.g. HTML5 `<tags>` without XHTML-styles self-closing `<tags/>` where they're not required)
-- Updating logical emphasis tags e.g. `<b>` -> `<strong>`, `<i>` -> `<em>`
+- Updating logical emphasis tags e.g. `<b>` ➡️ `<strong>`, `<i>` ➡️ `<em>`
 - Hoisting any inline `<style>` blocks to the `<head>`, and re-writing any repeated inline styles as classes
 - Suppressing comments
 - Repairing invalid HTML to save the browser from having to do it every time
