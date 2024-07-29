@@ -73,4 +73,4 @@ But personally, I'm really excited for the upcoming release of PHP 8.4's [modern
 
 ## Thanks
 
-Thanks to @edent for [encouraging](https://mastodon.social/@Edent/112871192888419993) me to share this.
+Thanks to [@edent](https://github.com/edent) for [encouraging](https://mastodon.social/@Edent/112871192888419993) me to share this.
